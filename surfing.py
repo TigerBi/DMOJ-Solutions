@@ -33,9 +33,3 @@ for i in sorted(links):
     pages_to_go += 1
 
 print inds, nums
-
-#while 1:
-#    start = raw_input()
-#    if start == "The End":
-#        break
-#    ;
