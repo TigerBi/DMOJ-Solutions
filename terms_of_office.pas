@@ -8,7 +8,6 @@ begin
   while i<=y do
   begin
     write('All positions change in year ');
-    write(i);
-    write('\n');
+    writeln(i);
   end;
 end.
