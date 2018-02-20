@@ -1,6 +1,3 @@
-# this is the correct submission to maze.
-# maze.py contains the bad one
-
 r = c = charmap = levels = None
 
 def valid(y, x):
