@@ -24,7 +24,7 @@ int main()
 {
 	int test_cases;
 	scanf("%d", &test_cases);
-	for (; test_cases > 0; test_cases--) {
+	while (test_cases--) {
 		int targetX = -1, targetY = -1;
 		scanf("%d %d\n", &w, &h);
 		for (int y = 0; y < h; y++) {
@@ -37,7 +37,7 @@ int main()
 				else if (grid[y][x] == 'C')
 					grid[y][x] = 0;
 			}
-                getchar();
+            getchar();
 		}
 		for (int i = 0; i < 65; i++) {
 			explore(i);
@@ -47,7 +47,7 @@ int main()
 		if (grid[targetY][targetX] >= 60)
 			printf("#notworth\n");
 		else
-                        printf("%d\n", grid[targetY][targetX]);
+            printf("%d\n", grid[targetY][targetX]);
 	}
 	return 0;
 }
