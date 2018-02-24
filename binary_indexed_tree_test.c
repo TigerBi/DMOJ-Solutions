@@ -19,28 +19,23 @@ int main()
 {
     scanf("%d %d\n", &n, &q);
     for (int i = 0; i < n; i++) bit[i] = 0;
-    for (int i = 1; i <= n; i++)
-    {
+    for (int i = 1; i <= n; i++) {
         scanf("%d", &arr[i]);
         add(i,arr[i]);
     }
-    while (q-- && getchar())
-    {
+    while (q-- && getchar()) {
         c = getchar();
-        if (c == 'C')
-        {
+        if (c == 'C') {
             scanf("%d %d", &t1, &t2);
             take(t2,arr[t1-1]);
             add(t2,t1);
             arr[t1-1] = t2;
         }
-        else if (c == 'S')
-        {
+        else if (c == 'S') {
             scanf("%d %d", &t1, &t2);
             printf("%lld\n", query(t1)-query(t2));
         }
-        else
-        {
+        else {
             scanf("%d", &t2);
             t1 = 0;
             for (int i = 0; i < n; i++)
