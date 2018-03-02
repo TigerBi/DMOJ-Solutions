@@ -1,3 +1,5 @@
+# A relatively simple soln implementing a Breadth-First-Search
+
 from sys import stdin, stdout
 read = lambda: stdin.readline().strip()
 tok = lambda: map(int, read().split())
