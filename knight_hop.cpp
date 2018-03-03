@@ -2,7 +2,7 @@
 using namespace std;
 
 int board[8][8];
-#define valid(y, x) ((!(y >= 8 || y < 0 || x >= 8 || x < 0)) && (board[y][x] == -1))
+#define process(y, x) if((!(y >= 8 || y < 0 || x >= 8 || x < 0)) && (board[y][x] == -1))board[y][x]=use;
 
 int hop(int n, int targetX, int targetY)
 {
@@ -10,14 +10,14 @@ int hop(int n, int targetX, int targetY)
 		for (int x = 0; x < 8; x++) {
 			if (board[y][x] == n) {
 				int use = n + 1;
-				if (valid(y+1, x+2)) board[y+1][x+2] = use;
-				if (valid(y+2, x+1)) board[y+2][x+1] = use;
-				if (valid(y+2, x-1)) board[y+2][x-1] = use;
-				if (valid(y+1, x-2)) board[y+1][x-2] = use;
-				if (valid(y-1, x-2)) board[y-1][x-2] = use;
-				if (valid(y-2, x-1)) board[y-2][x-1] = use;
-				if (valid(y-2, x+1)) board[y-2][x+1] = use;
-				if (valid(y-1, x+2)) board[y-1][x+2] = use;
+				process(y+1, x+2);
+				process(y+2, x+1);
+				process(y+2, x-1);
+				process(y+1, x-2);
+				process(y-1, x-2);
+				process(y-2, x-1);
+				process(y-2, x+1);
+				process(y-1, x+2);
 			}
 		}
 	}
