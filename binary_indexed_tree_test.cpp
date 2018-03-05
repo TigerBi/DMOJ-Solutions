@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <cstdio>
 
 int arr[100005], n, q, c, t1, t2;
 unsigned long long bit[100005];
