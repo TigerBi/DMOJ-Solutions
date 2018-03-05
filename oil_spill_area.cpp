@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <cstdio>
 
 int grid[10][10];
 
