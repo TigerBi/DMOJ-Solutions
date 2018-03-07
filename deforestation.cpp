@@ -9,8 +9,7 @@ int main()
     cin.tie(0);
     int n, total = 0, s, e;
     cin >> n;
-    for (int i = 1; i <= n; i++)
-    {
+    for (int i = 1; i <= n; i++) {
         cin >> s;
         total += s;
         arr[i] = total;
