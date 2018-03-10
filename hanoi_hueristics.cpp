@@ -16,6 +16,7 @@ void move(int n, int from, int to)
 int main()
 {
     int n, thing, out = 1;
+    // all input data is useless to me, except for "n"
     scanf("%d %d", &n, &thing);
     while (thing--)
     {
