@@ -11,7 +11,7 @@ int main()
 	long power = 2;
 	for (short i = 1; i <= 62; i++) {
 		powers.insert(power);
-		power *= 2;
+		power <<= 1;
 	}
 	int repeats;
 	cin >> repeats;
